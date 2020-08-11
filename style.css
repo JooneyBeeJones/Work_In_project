@@ -51,6 +51,7 @@ body {
 	color: black;
 	padding: 1rem;
 	transition: 250ms;
+	text-align: center;
 }
 
 .nav ul li a:hover, .nav a:hover {
@@ -163,6 +164,7 @@ body {
 	align-items: center;
 	font-size: 1.5rem;
 	position: relative;
+	height: 100vh;
 }
 
 .plans {
@@ -172,6 +174,7 @@ body {
 	margin-top: 10px;
 	text-align: center;
 }
+
 
 .section-plan h2 {
 	border-bottom: 2px solid black;
@@ -281,7 +284,7 @@ textarea {
 	border-radius: 8px;
 	outline: none;
 	font-family: inherit;
-		font-size: .5em;
+	font-size: .5em;
 }
 
 .input:focus {
@@ -300,3 +303,21 @@ textarea {
 	font-size: 1.5rem;
 }
 
+@media (max-width: 600px) {
+	.section-plan {
+		height: 150vh;
+	}
+
+	.plans{
+		flex-direction: column;
+		height: 40vh;
+	}
+
+	.disabled{
+		display: none;
+	}
+
+	nav a{
+		display: none;
+	}
+}

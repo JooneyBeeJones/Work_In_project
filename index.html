@@ -3,41 +3,144 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="refresh">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Work In</title>
 </head>
 <body>
 	<header>
-		<nav>
-			<div>
-				Logo
-			</div>
+		<nav class="nav">
+			<a href="#">
+				Work-In
+			</a>
 			<ul>
 				<li>
-					About
+					<a href="#how">How It Works</a>
 				</li>
 				<li>
-					Pricing
+					<a href="#plan">Plans</a>
 				</li>
 				<li>
-					FAQs
+					<a href="#contact">Contact</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section>
-			<img src="">
+		<section class="section section-heading">
+			<h1>
+				Work At Home
+			</h1>
 		</section>
-		<section>
-			Pricing
+		<section class="section section-text">
+			<h2>
+				Why work out at the gym when you can "work-in" home?
+			</h2>
 		</section>
-		<section>
-			FAQs	
+		<div class="section-about">
+		</div>
+		<section id="how" class="section section-how">
+			<h2>
+				How it Works
+			</h2>
+			<ul>
+				<li>
+					Pick a subscription plan
+				</li>
+				<li>
+					We send you a workout video everyday
+				</li>
+				<li>
+					Start working out!
+				</li>
+			</ul>
+		</section>
+		<div class="section-img"></div>
+		<section id="plan" class="section section-plan">
+			<h2>Subscription Plan</h2>
+			<div class="plans">
+				<div class="plans-basic">
+					<h3>Basic</h3>
+					<ul class="ul-plan">
+						<li>
+							$5/month
+						</li>
+						<li>
+							1 video a day
+						</li>
+						<li class="disabled">
+							Access to our forums
+						</li>
+						<li class="disabled">
+							24/7 Support Staff
+						</li>
+						<li class="disabled">
+							Get a Work In t-shirt
+						</li>
+					</ul>
+				</div>
+				<div class="plans-popular">
+					<h3>Popular</h3>
+					<ul class="ul-plan">
+						<li>
+							$10/month
+						</li>
+						<li>
+							3 video a day
+						</li>
+						<li>
+							Access to our forums
+						</li>
+						<li class="disabled">
+							24/7 Support Staff
+						</li>
+						<li class="disabled">
+							Get a Work In t-shirt
+						</li>
+					</ul>
+				</div>
+				<div class="plans-premium">
+					<h3>Premium</h3>
+					<ul class="ul-plan">
+						<li>
+							$25/month
+						</li>
+						<li>
+							5 video a day
+						</li>
+						<li>
+							Access to our forums
+						</li>
+						<li >
+							24/7 Support Staff
+						</li>
+						<li>
+							Get a Work In t-shirt
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="img-price "></div>
+		<section id="contact" class="section-contact">
+			<div class="about-card">
+				<h2>Contact</h2>
+				<form class="contact-form">
+					<label class="space" for="fname">First Name: </label>
+					<input class="input" type="text" id="fname" name="fname">
+					<label class="space" for="lname">Last Name:</label>
+					<input class="input"  type='text' id="lname" name="lname">
+					<label class="space" for="email">Email:</label>
+					<input class="input"  type="email" id="email" name="email"> 
+					<label class="space" for="message">Message:</label>
+					<textarea class="input"  id="message" name="message" >
+					</textarea>
+					<input class="space btn" type="submit" value="Send">
+				</form>
+			</div>
 		</section>
 	</main>
-	<footer>
-		Footer stuff
-	</footer>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

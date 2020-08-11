@@ -1,0 +1,302 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Montserrat;
+
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1.25rem;
+	z-index: 1;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+}
+
+.nav a {
+	animation: slideIn 500ms;
+	position: relative;
+}
+
+@keyframes slideIn{
+	from{
+		top: -100px;
+	}
+
+	to {
+		top: 0;
+	}
+}
+
+.nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+}
+
+.nav ul li {
+	list-style: none;
+	padding: .2rem 1rem;
+}
+
+.nav ul li a, .nav a {
+	text-decoration-line: none;
+	color: black;
+	padding: 1rem;
+	transition: 250ms;
+}
+
+.nav ul li a:hover, .nav a:hover {
+	background-color: black;
+	color: white;
+}
+
+.section {
+	height: 100vh;	
+}
+
+.section-heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: -1;
+
+	background-image: url(./img/header-image.jpg);
+	background-position: center;
+	background-repeat: none;
+	background-attachment: fixed;
+
+
+}
+
+.section-heading h1{
+	position: relative;
+	animation: slideLeft 500ms backwards;
+	animation-delay: 500ms;
+}
+
+@keyframes slideLeft{
+	from{
+		left: -100%;
+	}
+
+	to{
+		left: 0;
+	}
+}
+
+.section-heading h1 {
+	color: white;
+	font-size: 5rem;
+	text-align: center;
+	text-shadow: 5px 5px black;
+}
+
+.section-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-text h2 {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.section-about {
+	min-height: 400px;
+
+	position: relative;
+
+	background-image: url(./img/about-image.jpg);
+	background-position: center;
+	background-size: cover;\
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.section-how {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.section-how h2 {
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+
+.section-how ul {
+	list-style: none;
+	padding: 0;
+}
+
+.section-how ul li {
+	text-align: center;
+	padding: 1rem;
+}
+
+.section-img {
+	min-height: 400px;
+
+	position: relative;
+	background-image: url(./img/contact.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.section-plan {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+.plans {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.section-plan h2 {
+	border-bottom: 2px solid black;
+	position: absolute;
+	top: 30px;
+}
+
+.ul-plan {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	list-style: none;
+}
+
+.ul-plan li {
+	padding: 1rem;
+}
+
+.plans-basic, .plans-premium, .plans-popular {
+	width: 35vh;
+	height: 55vh;
+	border: 3px solid black;
+	border-radius: 8px;
+	margin: 10px;
+	transition: 200ms;
+}
+
+.plans-basic:hover, .plans-premium:hover, .plans-popular:hover {
+	background-color: black;
+	color: white;
+}
+
+.disabled {
+	text-decoration-line: line-through;
+}
+
+.img-price {
+	height: 500px;
+	position: relative;
+
+	background-image: url(./img/price.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+.section-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	height: 100vh;
+}
+
+.about-card {
+	background-color: white;
+	border: 2px solid black;
+	box-shadow: 5px 5px black;
+	border-radius: 8px;
+	padding: 1rem;
+}
+
+.about-card h2 {
+	border-bottom: 2px solid black
+
+}
+
+.faq-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 75vw;
+
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+textarea {
+	resize: none;
+	width: 300px;
+	min-height: 100px;
+	max-height: 150px;
+	overflow: hidden;
+	font-size: 2em;
+	font-family: inherit;
+}
+
+.space {
+	padding: .5rem ;
+}
+
+.input {
+	padding: .5rem;
+	border: 1px solid black;
+	border-radius: 8px;
+	outline: none;
+	font-family: inherit;
+		font-size: .5em;
+}
+
+.input:focus {
+	border: 2px solid black;
+
+}
+
+.btn {
+	margin-top: 10px;
+
+	background-color: white;
+	outline: none;
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 8px;
+	font-size: 1.5rem;
+}
+
